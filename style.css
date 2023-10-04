@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+margin : 0;
+padding : 0;
+box-sizing : border-box;
+font-family: 'Montserrat', sans-serif;
+color: white;
+}
+html,body {
+width : 100%;
+height : 100%;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+}
+.box{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    /* background-color: lightseagreen; */
+    border: 5px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.head{
+    /* background-color: aqua; */
+    height: 70px;
+}
+.head h1{
+    font-size: 3.5vw;
+    text-align: center;
+    position: relative;
+    height: 70px;
+    color: white;
+}
+.head h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background-color: white;
+    transition: all ease 1s;
+}
+.head h1:hover::after{
+    width: 100%;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* justify-content: center; */
+    padding-top: 150px;
+    width: 100%;
+    height: calc(100% - 70px);
+    /* background-color: burlywood; */
+}
+.user{
+    margin-bottom: 20px;
+    /* background-color: yellow; */
+}
+.pass{
+    margin-bottom: 20px;
+    /* background-color: yellow; */
+}
+input{
+    width: 300px;
+    height: 30px;
+    border: 0;
+    border-bottom: 1px solid white;
+    background: transparent;
+} 
+input text{
+    color: white;
+}
+input:focus{
+    color: white;
+}
+i{
+    height: 30px;
+    color: white;
+}
+.but{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    font-size: 25px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: 0;
+    background-color: white;
+    color: black;
+    transition: all ease 0.2s;
+}
+.btn:active{
+    transform: scale(0.9);
+}
